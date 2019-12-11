@@ -1,0 +1,2 @@
+class Categoryuser < ApplicationRecord
+end
