@@ -6,5 +6,15 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
+  .body
+    .header
+      .header__title AweSome
+      = link_to "#" do
+        .ul
+          .li 
+            = link_to "#" do
+              = icon('far', 'address-book')
+          .li
+            = link_to "#" do
+              = icon('fas', 'user-circle',class: 'icon')
     = yield

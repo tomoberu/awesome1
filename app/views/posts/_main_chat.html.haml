@@ -1,1 +1,10 @@
-{}
+.side_bar
+  .side_ber__top
+    .form
+      .input-box
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'message_content', placeholder: 'type a message'
+          = f.label :image, class: 'input-box__image' do
+            = icon 'far', 'image'
+            = f.file_field :image, class: 'input-box__image--heid'
+          = f.submit 'Send', class: 'submit-btn'
