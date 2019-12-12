@@ -8,8 +8,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   .body
     .header
-      .header__title AweSome
-      = link_to "#" do
+      .header__title 
+        = link_to "#" , class:"header__title" do
+          AweSome
         .ul
           .li 
             = link_to "#" do
